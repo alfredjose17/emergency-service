@@ -1,0 +1,35 @@
+.outterbox{
+
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 130px;
+    width: 35%;
+    height: 375px;
+    border: 3px solid rgb(241, 92, 92);
+    background-color: #e0e0e0;
+    opacity: 0.9;
+    border-radius: 15px;
+
+}
+
+.innerbox{
+
+
+    border-radius: 7px;
+   
+}
+.form{
+
+    margin-left: 35px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 14px;
+
+}
+
+.form-text{
+
+    margin-right: 95px;
+    font-size: 16px;
+
+}
