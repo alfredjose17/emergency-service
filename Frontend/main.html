@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main.css">  
     <style>
-
-        body {
+        
+        body {    
             background-image: url("hospital.jpg");
             height: 100%;
             background-position: center;
-            background-size: cover;
+            background-size: 1400px 700px;
             background-repeat: no-repeat;
-
+            
         }
 
-    </style>
-
-    <body>
+    </style>     
+    
+    <body>   
         <div class="container-fluid">
             <div class="outterbox">
                 <form action="url" class="Form">
                     <p class="text-danger UserPass">User Name<p>
-                    <input type="text" class="innerbox"placeholder="Your UserName">
+                    <input type="text" class="innerbox"placeholder="UserName"> 
                     <p class="text-danger UserPass">Password<p>
-                    <input type="password" placeholder="Your Password"></br></br>
+                    <input type="password" class="innerbox"placeholder=" Password" id="pwd" class="masked" name="password">
+                    <!--<button type="button" onclick="showHide()" id="eye"></button>--></br></br>
                     <button type="submit" class="btn btn-primary">Login</button>
                     <button type="submit" class="btn btn-danger">SignUp</button>
                 </form>
-            </div>
-        </div>
+            </div>  
+        </div>  
     </body>
 </html>
