@@ -18,7 +18,7 @@
     <body>
         <div class="container-fluid">
             <div class="outterbox">
-                <form method="post" action="/home/avj17/Emergency-Service/Frontend/login.php" class="Form">
+                <form method="post" action="login.php" class="Form">
                     <p class="text-danger UserPass">User Name<p>
                     <input type="text" class="innerbox" placeholder="UserName" name="username">
                     <p class="text-danger UserPass">Password<p>
