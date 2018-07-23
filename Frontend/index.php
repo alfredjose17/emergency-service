@@ -25,8 +25,10 @@
                     <input type="password" class="innerbox" placeholder=" Password" name="password">
                     </br></br>
                     <input type="submit" class="btn btn-primary" name="login" value="Login">
-                    <input type="submit" class="btn btn-danger" name="signup" value="SignUp">
                 </form>
+		<form method="post" action="SignUp.html">
+		    	<input type="submit" class="btn btn-danger" name="signup" value="SignUp">
+		</form>
             </div>
         </div>
     </body>
