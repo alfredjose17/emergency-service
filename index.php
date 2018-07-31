@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-    <?php
+<?php
         session_start();
         $_SESSION['message'] = '';
         $mysqli = new mysqli('localhost', 'root', 'root', 'database');
@@ -22,7 +21,8 @@
             }
 
         }
-    ?>
+?>
+
 <html>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">

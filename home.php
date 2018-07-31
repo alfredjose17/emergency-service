@@ -6,7 +6,7 @@
     $conn = new mysqli('localhost','root','root','database');
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-    } 
+    }
 
     $sql = "SELECT * FROM user WHERE USER_NAME = '$username' AND PASS = '$password'";
     $result = $conn->query($sql);
@@ -18,60 +18,60 @@
 
     $conn->close();
 ?>
+
 <html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
-<p class="welcome">Welcome <?php echo $row["NAME"]; ?>,</p> 
-<a href="index.php" class="logout btn btn-primary" >Logout</a>
-<center>
-<h1>REPORT</h1>
-</center>
-</head>
-<table width="100%"; border="2" style="background-colour: #84ed86";align="center";bgcolor="#00FF00">
-<center>
-<thead>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <p class="welcome">Welcome <?php echo $row["NAME"]; ?>,</p>
+    <a href="index.php" class="logout btn btn-primary" >Logout</a>
+    <center>
+      <h1>REPORT</h1>
+    </center>
+  </head>
+  <table width="100%"; border="2" style="background-colour: #84ed86";align="center";bgcolor="#00FF00">
+    <center>
+      <thead>
+        <tr>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>DEPARTMENT</th>
+          <th>CODE</th>
 
-<tr>
-    <th>DATE</th>
-    <th>TIME</th>
-    <th>DEPARTMENT</th>
-    <th>CODE</th>
+        </tr>
+      </thead>
+    </center>
+    <tbody>
+      <style type="text/css">
 
-</tr>
-</thead>
-</center>
-<tbody>
-<style type="text/css">
-body{
-background-image: url("bg2.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+        body{
+          background-image: url("bg2.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
 
+        tr:nth-child(even) {background-color: #f2f2f2;}
 
-}
-tr:nth-child(even) {background-color: #f2f2f2;}
-table {
-    border: 1px solid black;
-}
-table th {
-  background-color: #d4e3e5;
-  padding: 8px;
-}
-</style>
+        table {
+          border: 1px solid black;
+        }
 
-<?php
+        table th {
+          background-color: #d4e3e5;
+          padding: 8px;
+        }
+  </style>
 
+  <?php
 
     $servername = "10.20.20.90";
     $username = "root";
     $password = "root";
     $dbname = "emer";
 
-    // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
+
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -80,7 +80,6 @@ table th {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        // output data of each row
                while($row = $result->fetch_assoc()) {
 
             echo "<tr>";
@@ -99,11 +98,8 @@ table th {
         echo "0 results";
     }
     $conn->close();
-//$array=$result->fetch();
-/*do {
-}while($array=$result->fetch()); */
  ?>
-</tbody>
-</table>
-</body>
+
+    </tbody>
+  </table>
 </html>
